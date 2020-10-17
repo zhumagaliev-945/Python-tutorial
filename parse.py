@@ -20,7 +20,6 @@ def get_content(html):
         title = item.find('div', class_='proposition_title')
         h3 = title.find('h3')
         link = h3.find('a')
-        a = link.find('a')
         cars.append({
             'title': h3.get_text(strip=True),
             'link': HOST + link.get('href'),
