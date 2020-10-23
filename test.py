@@ -1,17 +1,18 @@
-import json
-
-def main():
-#  Indicator
-    with open("test.json", "r") as f:
-        file = json.load(f)
-        in_to_dict = file["variables"]
-        values = in_to_dict[0]["values"]
-        valueText = in_to_dict[0]["valueTexts"]
-        loop1 = {}
-        y = 0
-        for x in values:
-            loop1[x]=valueText[y]
-            y = y + 1
-        print(json.dumps(loop1, indent=2))
-main()
+# import json
+#
+#
+# def get_json_file():
+#     with open("test.json", "r") as f:
+#         file = json.load(f)
+#         lab = file['variables']
+#
+#         list_of_values = []
+#         for values in lab:
+#             for item in values['values']:
+#                 list = []
+#                 print(list.append(item))
+#
+#
+#
+# get_json_file()
 
