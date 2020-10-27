@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import csv
 
-URL = 'https://kolesa.kz/cars/zil'
+URL = 'https://kolesa.kz/cars/volvo/s80/'
 HEADERS = {'user-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0',
            'accept': '*/*'}
 LINK = 'https://kolesa.kz'
+FILE = 'cars.csv'
 
 
 def get_html(url, parameters=None):
@@ -40,19 +42,27 @@ def get_content(html):
         })
     print(json.dumps(cars, indent=2, ensure_ascii=False))
 
+def save(items, path):
+    with open(path, 'w', newline='') as file:
+        writer = csv.writer(file, delimiter=';')
+        writer.writerow(['Model', 'Link', 'Price', 'Currency', 'City', 'Add_information'])
+        for ob in items:
+            writer.writerow([ob['title'], ob['link'], ob['price'], ob['currency'], ob['city'], ob['additional-info']])
+
+
 
 def parse():
     html = get_html(URL)
     if html.status_code == 200:
-        models = []
+        collect = []
         pages = get_count_pages(html.text)
-        for page in range(1, pages + 1):
-            html = get_html(URL, parameters={'page': page})
-            models.extend(get_content(html.text))
-        print(len(models))
+        for number in range(1, pages + 1):
+            get_result = get_html(URL, parameters={'page': number})
+            outut = get_content(get_result.text)
+            collect.extend(outut)
+        save(collect, FILE)
     else:
-        print("Error>>> Link is not correct")
+        print("Error >>> <br> Link is not correct")
 
 
 parse()
-
