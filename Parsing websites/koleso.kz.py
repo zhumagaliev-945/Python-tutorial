@@ -40,7 +40,8 @@ def get_content(html):
 
 
         })
-    print(json.dumps(cars, indent=2, ensure_ascii=False))
+    # return json.dumps(cars, indent=2, ensure_ascii=False)
+    return cars
 
 def save(items, path):
     with open(path, 'w', newline='') as file:
@@ -50,7 +51,6 @@ def save(items, path):
             writer.writerow([ob['title'], ob['link'], ob['price'], ob['currency'], ob['city'], ob['additional-info']])
 
 
-
 def parse():
     html = get_html(URL)
     if html.status_code == 200:
@@ -58,8 +58,8 @@ def parse():
         pages = get_count_pages(html.text)
         for number in range(1, pages + 1):
             get_result = get_html(URL, parameters={'page': number})
-            outut = get_content(get_result.text)
-            collect.extend(outut)
+            output = get_content(get_result.text)
+            collect.extend(output)
         save(collect, FILE)
     else:
         print("Error >>> <br> Link is not correct")
