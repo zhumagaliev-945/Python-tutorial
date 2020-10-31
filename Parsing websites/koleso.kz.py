@@ -1,9 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 import csv
 
-URL = 'https://kolesa.kz/cars/volvo/s80/'
+URL = 'https://kolesa.kz/cars/toyota/camry/nur-sultan/'
 HEADERS = {'user-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0',
            'accept': '*/*'}
 LINK = 'https://kolesa.kz'
@@ -42,6 +41,7 @@ def get_content(html):
         })
     # return json.dumps(cars, indent=2, ensure_ascii=False)
     return cars
+
 
 def save(items, path):
     with open(path, 'w', newline='') as file:
