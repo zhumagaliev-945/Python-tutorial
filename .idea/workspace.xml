@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c07abb2-dc40-4ee6-962b-4f0e2d1a851c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Parsing websites/web/memining.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/Books.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/lesson_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/lesson_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/supersliv.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsing websites/web/Favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsing websites/web/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsing websites/web/memining.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parsing websites/web/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/Books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/Books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/L3_parsing_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/L3_parsing_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/data_table.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/data_table.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/lesson_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/lesson_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/lesson_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/lesson_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/lesson_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/lesson_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/supersliv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Parsing websites/supersliv.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,28 +83,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs/L3_parsing_tables.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lesson_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python-tutorial" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs/lesson_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parsing websites/L3_parsing_tables.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,6 +113,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lesson_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-tutorial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parsing websites/lesson_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="lesson_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-tutorial" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +146,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs/lesson_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parsing websites/lesson_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
