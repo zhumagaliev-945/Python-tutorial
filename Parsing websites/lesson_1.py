@@ -41,4 +41,5 @@ def get_data(html):
 def parse():
     print(get_data(get_html(URL)))
 
+
 parse()

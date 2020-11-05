@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-
-URL = 'https://kolesa.kz/cars/toyota/camry/nur-sultan/'
+URL = 'https://kolesa.kz/cars/mercedes-benz/s-320/taraz/'
 HEADERS = {'user-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0',
            'accept': '*/*'}
 LINK = 'https://kolesa.kz'
@@ -35,20 +34,19 @@ def get_content(html):
             'price': data.find('span', class_='price').get_text(strip=True).replace('<span class="curr-sign">', ''),
             'currency': data.find('span', class_='curr-sign').get_text(),
             'city': data.find('div', class_='list-region').get_text(strip=True),
-            'additional-info': data.find('div', class_='a-search-description').get_text(strip=True)
+
 
 
         })
-    # return json.dumps(cars, indent=2, ensure_ascii=False)
     return cars
 
 
 def save(items, path):
     with open(path, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=';')
-        writer.writerow(['Model', 'Link', 'Price', 'Currency', 'City', 'Add_information'])
+        writer.writerow(['Model', 'Link', 'Price', 'Currency', 'City'])
         for ob in items:
-            writer.writerow([ob['title'], ob['link'], ob['price'], ob['currency'], ob['city'], ob['additional-info']])
+            writer.writerow([ob['title'], ob['link'], ob['price'], ob['currency'], ob['city']])
 
 
 def parse():
